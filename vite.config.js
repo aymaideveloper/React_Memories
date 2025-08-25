@@ -6,6 +6,8 @@ import eslint from "vite-plugin-eslint";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/React_Memories/",
+  // the base to match that on the github page, not local directory
   plugins: [react(), eslint()],
 });
 
