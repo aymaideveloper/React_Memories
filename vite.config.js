@@ -6,8 +6,9 @@ import eslint from "vite-plugin-eslint";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/React_Memories/" : "/",
-  // Use "/React_Memories/" base for production (GitHub Pages), "/" for development
+  base: "/React_Memories/",
+  // base: mode === "production" ? "/React_Memories/" : "/",
+
   plugins: [react(), eslint()],
 }));
 
